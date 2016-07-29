@@ -1,5 +1,123 @@
-$dark-color: #aaa;
+$clock-size:500px;
+$border-width: 2px;
+$pos-initial: 50px;
+$numbers-color: white;
 
-body{
-  background: $dark-color;
+@function pow($number, $exp) {
+  $value: 1;
+  @if $exp > 0 {
+    @for $i from 1 through $exp {
+      $value: $value * $number;
+    }
+  }
+  @else if $exp < 0 {
+    @for $i from 1 through -$exp {
+      $value: $value / $number;
+    }
+  }
+  @return $value;
+}
+@function fact($number) {
+  $value: 1;
+  @if $number > 0 {
+    @for $i from 1 through $number {
+      $value: $value * $i;
+    }
+  }
+  @return $value;
+}
+@function pi() {
+  @return 3.14159265359;
+}
+@function rad($angle) {
+  $unit: unit($angle);
+  $unitless: $angle / ($angle * 0 + 1);
+  // If the angle has 'deg' as unit, convert to radians.
+  @if $unit == deg {
+    $unitless: $unitless / 180 * pi();
+  }
+  @return $unitless;
+}
+@function sin($angle) {
+  $sin: 0;
+  $angle: rad($angle);
+  // Iterate a bunch of times.
+  @for $i from 0 through 10 {
+    $sin: $sin + pow(-1, $i) * pow($angle, (2 * $i + 1)) / fact(2 * $i + 1);
+  }
+  @return $sin;
+}
+@function cos($angle) {
+  $cos: 0;
+  $angle: rad($angle);
+  // Iterate a bunch of times.
+  @for $i from 0 through 10 {
+    $cos: $cos + pow(-1, $i) * pow($angle, 2 * $i) / fact(2 * $i);
+  }
+  @return $cos;
+}
+
+@function tan($angle) {
+  @return sin($angle) / cos($angle);
+}
+
+div#reloj{
+  background-image: url('https://i.ytimg.com/vi/2sj2iQyBTQs/maxresdefault.jpg');
+  background-size: 100% 100%;
+	margin: $pos-initial;
+	width: $clock-size;
+	height: $clock-size;
+	background-color: transparent;
+	border: solid black $border-width;
+	-webkit-border-radius: $clock-size;
+  -moz-border-radius: $clock-size;
+  border-radius: $clock-size;
+}
+h6{
+  position: absolute;
+  font-size: 16px;
+  color: $numbers-color;
+}
+@for $i from 1 through (12){
+  .hora-#{$i}{
+    top: ($clock-size/2 - $pos-initial/4)*sin(0.1666667*pi()*($i - 3)) + $clock-size/2 + $pos-initial;
+    left: ($clock-size/2 - $pos-initial/4)*cos(0.1666667*pi()*($i - 3)) + $clock-size/2 + $pos-initial;
+  }
+}
+#horera,#minutera,#segundera{
+  position: absolute;
+  left: $clock-size/2 + $pos-initial;
+  bottom: $clock-size/2 + $pos-initial/2;
+}
+#minutera{
+  left: $clock-size/2 + $pos-initial*1.03;
+}
+#segundera{
+  left: $clock-size/2 + $pos-initial*1.07; 
+}
+div#horera{
+  border: solid black $border-width*3;
+  height: $clock-size*0.10;
+  width: $clock-size*0.0001;
+}
+div#minutera{
+  border: solid blue $border-width*2;
+  height: $clock-size*0.20;
+  width: $clock-size*0.00001;
+}
+div#segundera{
+  border: solid red $border-width*1;
+  height: $clock-size*0.30;
+  width: $clock-size*0.000001;  
+}
+@for $i from 0 through(59){
+  .ms-#{$i}{
+    transform: rotate(6*$i#{'deg'});
+  }
+}
+@for $i from 1 through(60){
+  .sm-#{$i}{
+    top: ($clock-size/2 - $pos-initial/4)*sin(0.1666667*pi()*($i - 3)) + $clock-size/2 + $pos-initial;
+    left: ($clock-size/2 - $pos-initial/4)*cos(0.1666667*pi()*($i - 3)) + $clock-size/2 + $pos-initial;
+  }
 }
