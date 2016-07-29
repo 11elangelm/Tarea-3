@@ -1,3 +1,13 @@
+var viewport = document.getElementsByTagName("BODY")[0];
+function render(state){
+  var html = "";
+  html += '<h2>Hora Actual</h2>  <div id="analogo">    	<div id="reloj">    		<h6 class="hora-1">1</h6>    		<h6 class="hora-2">2</h6>    		<h6 class="hora-3">3</h6>    		<h6 class="hora-4">4</h6>    		<h6 class="hora-5">5</h6>    		<h6 class="hora-6">6</h6>    		<h6 class="hora-7">7</h6>    		<h6 class="hora-8">8</h6>    		<h6 class="hora-9">9</h6>    		<h6 class="hora-10">10</h6>    		<h6 class="hora-11">11</h6>    		<h6 class="hora-12">12</h6>        <div id="horera"></div>        <div id="minutera"></div>        <div id="segundera"></div>        <div class="rayita"></div>    	</div>    </div>    <div id="digital">      <div id="hora"></div>      <div id="minuto"></div>      <div id="segundo"></div>    </div>  	<div>  		<select id="opciones">  			<option value="Análogo">Análogo</option>  			<option value="Digital">Digital</option>  		</select>  	</div>';
+  return html;
+}
+
+viewport.innerHTML = render();
+
+
 var combobox = document.getElementById('opciones');
 function actualizarHora(){
 	var d = new Date();
@@ -36,6 +46,15 @@ function actualizarDigital(){
 	var h = d.getHours();
 	var m = d.getMinutes();
 	var s = d.getSeconds();
+	if (h.toString().length == 1){
+		h = '0'+h;
+	}
+	if (m.toString().length == 1){
+		m = '0'+m;
+	}
+	if (s.toString().length == 1){
+		s = '0'+s;
+	}
 	document.getElementById('hora').innerHTML = h;
 	document.getElementById('minuto').innerHTML = m;
 	document.getElementById('segundo').innerHTML = s;
