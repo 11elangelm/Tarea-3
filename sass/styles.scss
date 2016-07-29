@@ -3,6 +3,7 @@ $border-width: 2px;
 $pos-initial: 50px;
 $numbers-color: white;
 
+/* OBTENIDO DE : https://unindented.org/articles/trigonometry-in-sass/ */
 @function pow($number, $exp) {
   $value: 1;
   @if $exp > 0 {
@@ -56,38 +57,38 @@ $numbers-color: white;
   }
   @return $cos;
 }
+/* OBTENIDO DE: https://unindented.org/articles/trigonometry-in-sass/*/
 
-@function tan($angle) {
-  @return sin($angle) / cos($angle);
+.hidden{
+  display: none;
 }
-
 div#reloj{
+  -webkit-border-radius: $clock-size;
+  background-color: transparent;
+  border: solid black $border-width;
+  height: $clock-size;
+  margin: $pos-initial;
+  width: $clock-size;
+  -moz-border-radius: $clock-size;
   background-image: url('https://i.ytimg.com/vi/2sj2iQyBTQs/maxresdefault.jpg');
   background-size: 100% 100%;
-	margin: $pos-initial;
-	width: $clock-size;
-	height: $clock-size;
-	background-color: transparent;
-	border: solid black $border-width;
-	-webkit-border-radius: $clock-size;
-  -moz-border-radius: $clock-size;
   border-radius: $clock-size;
 }
 h6{
-  position: absolute;
-  font-size: 16px;
   color: $numbers-color;
+  font-size: 16px;
+  position: absolute;
 }
 @for $i from 1 through (12){
   .hora-#{$i}{
-    top: ($clock-size/2 - $pos-initial/4)*sin(0.1666667*pi()*($i - 3)) + $clock-size/2 + $pos-initial;
     left: ($clock-size/2 - $pos-initial/4)*cos(0.1666667*pi()*($i - 3)) + $clock-size/2 + $pos-initial;
+    top: ($clock-size/2 - $pos-initial/4)*sin(0.1666667*pi()*($i - 3)) + $clock-size/2 + $pos-initial;
   }
 }
 #horera,#minutera,#segundera{
-  position: absolute;
+  bottom: $clock-size/2 + $pos-initial*1.25;
   left: $clock-size/2 + $pos-initial;
-  bottom: $clock-size/2 + $pos-initial/2;
+  position: absolute;
 }
 #minutera{
   left: $clock-size/2 + $pos-initial*1.03;
@@ -113,11 +114,14 @@ div#segundera{
 @for $i from 0 through(59){
   .ms-#{$i}{
     transform: rotate(6*$i#{'deg'});
+    transform-origin: bottom;
   }
 }
-@for $i from 1 through(60){
-  .sm-#{$i}{
-    top: ($clock-size/2 - $pos-initial/4)*sin(0.1666667*pi()*($i - 3)) + $clock-size/2 + $pos-initial;
-    left: ($clock-size/2 - $pos-initial/4)*cos(0.1666667*pi()*($i - 3)) + $clock-size/2 + $pos-initial;
-  }
+#digital div{
+  border: solid black $border-width;
+  display: inline;
+  font-size: $pos-initial;
+}
+#digital div:not(:last-child):after{
+  content: ":";
 }

@@ -1,72 +1,77 @@
+/* OBTENIDO DE : https://unindented.org/articles/trigonometry-in-sass/ */
+/* OBTENIDO DE: https://unindented.org/articles/trigonometry-in-sass/*/
+.hidden {
+  display: none; }
+
 div#reloj {
-  background-image: url("https://i.ytimg.com/vi/2sj2iQyBTQs/maxresdefault.jpg");
-  background-size: 100% 100%;
-  margin: 50px;
-  width: 500px;
-  height: 500px;
+  -webkit-border-radius: 500px;
   background-color: transparent;
   border: solid black 2px;
-  -webkit-border-radius: 500px;
+  height: 500px;
+  margin: 50px;
+  width: 500px;
   -moz-border-radius: 500px;
+  background-image: url("https://i.ytimg.com/vi/2sj2iQyBTQs/maxresdefault.jpg");
+  background-size: 100% 100%;
   border-radius: 500px; }
 
 h6 {
-  position: absolute;
+  color: white;
   font-size: 16px;
-  color: white; }
+  position: absolute; }
 
 .hora-1 {
-  top: 94.31894px;
-  left: 418.74996px; }
+  left: 418.74996px;
+  top: 94.31894px; }
 
 .hora-2 {
-  top: 181.24998px;
-  left: 505.68102px; }
+  left: 505.68102px;
+  top: 181.24998px; }
 
 .hora-3 {
-  top: 300px;
-  left: 537.5px; }
+  left: 537.5px;
+  top: 300px; }
 
 .hora-4 {
-  top: 418.75002px;
-  left: 505.68102px; }
+  left: 505.68102px;
+  top: 418.75002px; }
 
 .hora-5 {
-  top: 505.68106px;
-  left: 418.74996px; }
+  left: 418.74996px;
+  top: 505.68106px; }
 
 .hora-6 {
-  top: 537.5px;
-  left: 299.99993px; }
+  left: 299.99993px;
+  top: 537.5px; }
 
 .hora-7 {
-  top: 505.68098px;
-  left: 181.24991px; }
+  left: 181.24991px;
+  top: 505.68098px; }
 
 .hora-8 {
-  top: 418.74989px;
-  left: 94.3189px; }
+  left: 94.3189px;
+  top: 418.74989px; }
 
 .hora-9 {
-  top: 299.99985px;
-  left: 62.5px; }
+  left: 62.5px;
+  top: 299.99985px; }
 
 .hora-10 {
-  top: 181.24985px;
-  left: 94.31905px; }
+  left: 94.31905px;
+  top: 181.24985px; }
 
 .hora-11 {
-  top: 94.31887px;
-  left: 181.25018px; }
+  left: 181.25018px;
+  top: 94.31887px; }
 
 .hora-12 {
-  top: 62.50003px;
-  left: 300.00036px; }
+  left: 300.00036px;
+  top: 62.50003px; }
 
 #horera, #minutera, #segundera {
-  position: absolute;
+  bottom: 312.5px;
   left: 300px;
-  bottom: 275px; }
+  position: absolute; }
 
 #minutera {
   left: 301.5px; }
@@ -90,421 +95,249 @@ div#segundera {
   width: 0.0005px; }
 
 .ms-0 {
-  transform: rotate(0deg); }
+  transform: rotate(0deg);
+  transform-origin: bottom; }
 
 .ms-1 {
-  transform: rotate(6deg); }
+  transform: rotate(6deg);
+  transform-origin: bottom; }
 
 .ms-2 {
-  transform: rotate(12deg); }
+  transform: rotate(12deg);
+  transform-origin: bottom; }
 
 .ms-3 {
-  transform: rotate(18deg); }
+  transform: rotate(18deg);
+  transform-origin: bottom; }
 
 .ms-4 {
-  transform: rotate(24deg); }
+  transform: rotate(24deg);
+  transform-origin: bottom; }
 
 .ms-5 {
-  transform: rotate(30deg); }
+  transform: rotate(30deg);
+  transform-origin: bottom; }
 
 .ms-6 {
-  transform: rotate(36deg); }
+  transform: rotate(36deg);
+  transform-origin: bottom; }
 
 .ms-7 {
-  transform: rotate(42deg); }
+  transform: rotate(42deg);
+  transform-origin: bottom; }
 
 .ms-8 {
-  transform: rotate(48deg); }
+  transform: rotate(48deg);
+  transform-origin: bottom; }
 
 .ms-9 {
-  transform: rotate(54deg); }
+  transform: rotate(54deg);
+  transform-origin: bottom; }
 
 .ms-10 {
-  transform: rotate(60deg); }
+  transform: rotate(60deg);
+  transform-origin: bottom; }
 
 .ms-11 {
-  transform: rotate(66deg); }
+  transform: rotate(66deg);
+  transform-origin: bottom; }
 
 .ms-12 {
-  transform: rotate(72deg); }
+  transform: rotate(72deg);
+  transform-origin: bottom; }
 
 .ms-13 {
-  transform: rotate(78deg); }
+  transform: rotate(78deg);
+  transform-origin: bottom; }
 
 .ms-14 {
-  transform: rotate(84deg); }
+  transform: rotate(84deg);
+  transform-origin: bottom; }
 
 .ms-15 {
-  transform: rotate(90deg); }
+  transform: rotate(90deg);
+  transform-origin: bottom; }
 
 .ms-16 {
-  transform: rotate(96deg); }
+  transform: rotate(96deg);
+  transform-origin: bottom; }
 
 .ms-17 {
-  transform: rotate(102deg); }
+  transform: rotate(102deg);
+  transform-origin: bottom; }
 
 .ms-18 {
-  transform: rotate(108deg); }
+  transform: rotate(108deg);
+  transform-origin: bottom; }
 
 .ms-19 {
-  transform: rotate(114deg); }
+  transform: rotate(114deg);
+  transform-origin: bottom; }
 
 .ms-20 {
-  transform: rotate(120deg); }
+  transform: rotate(120deg);
+  transform-origin: bottom; }
 
 .ms-21 {
-  transform: rotate(126deg); }
+  transform: rotate(126deg);
+  transform-origin: bottom; }
 
 .ms-22 {
-  transform: rotate(132deg); }
+  transform: rotate(132deg);
+  transform-origin: bottom; }
 
 .ms-23 {
-  transform: rotate(138deg); }
+  transform: rotate(138deg);
+  transform-origin: bottom; }
 
 .ms-24 {
-  transform: rotate(144deg); }
+  transform: rotate(144deg);
+  transform-origin: bottom; }
 
 .ms-25 {
-  transform: rotate(150deg); }
+  transform: rotate(150deg);
+  transform-origin: bottom; }
 
 .ms-26 {
-  transform: rotate(156deg); }
+  transform: rotate(156deg);
+  transform-origin: bottom; }
 
 .ms-27 {
-  transform: rotate(162deg); }
+  transform: rotate(162deg);
+  transform-origin: bottom; }
 
 .ms-28 {
-  transform: rotate(168deg); }
+  transform: rotate(168deg);
+  transform-origin: bottom; }
 
 .ms-29 {
-  transform: rotate(174deg); }
+  transform: rotate(174deg);
+  transform-origin: bottom; }
 
 .ms-30 {
-  transform: rotate(180deg); }
+  transform: rotate(180deg);
+  transform-origin: bottom; }
 
 .ms-31 {
-  transform: rotate(186deg); }
+  transform: rotate(186deg);
+  transform-origin: bottom; }
 
 .ms-32 {
-  transform: rotate(192deg); }
+  transform: rotate(192deg);
+  transform-origin: bottom; }
 
 .ms-33 {
-  transform: rotate(198deg); }
+  transform: rotate(198deg);
+  transform-origin: bottom; }
 
 .ms-34 {
-  transform: rotate(204deg); }
+  transform: rotate(204deg);
+  transform-origin: bottom; }
 
 .ms-35 {
-  transform: rotate(210deg); }
+  transform: rotate(210deg);
+  transform-origin: bottom; }
 
 .ms-36 {
-  transform: rotate(216deg); }
+  transform: rotate(216deg);
+  transform-origin: bottom; }
 
 .ms-37 {
-  transform: rotate(222deg); }
+  transform: rotate(222deg);
+  transform-origin: bottom; }
 
 .ms-38 {
-  transform: rotate(228deg); }
+  transform: rotate(228deg);
+  transform-origin: bottom; }
 
 .ms-39 {
-  transform: rotate(234deg); }
+  transform: rotate(234deg);
+  transform-origin: bottom; }
 
 .ms-40 {
-  transform: rotate(240deg); }
+  transform: rotate(240deg);
+  transform-origin: bottom; }
 
 .ms-41 {
-  transform: rotate(246deg); }
+  transform: rotate(246deg);
+  transform-origin: bottom; }
 
 .ms-42 {
-  transform: rotate(252deg); }
+  transform: rotate(252deg);
+  transform-origin: bottom; }
 
 .ms-43 {
-  transform: rotate(258deg); }
+  transform: rotate(258deg);
+  transform-origin: bottom; }
 
 .ms-44 {
-  transform: rotate(264deg); }
+  transform: rotate(264deg);
+  transform-origin: bottom; }
 
 .ms-45 {
-  transform: rotate(270deg); }
+  transform: rotate(270deg);
+  transform-origin: bottom; }
 
 .ms-46 {
-  transform: rotate(276deg); }
+  transform: rotate(276deg);
+  transform-origin: bottom; }
 
 .ms-47 {
-  transform: rotate(282deg); }
+  transform: rotate(282deg);
+  transform-origin: bottom; }
 
 .ms-48 {
-  transform: rotate(288deg); }
+  transform: rotate(288deg);
+  transform-origin: bottom; }
 
 .ms-49 {
-  transform: rotate(294deg); }
+  transform: rotate(294deg);
+  transform-origin: bottom; }
 
 .ms-50 {
-  transform: rotate(300deg); }
+  transform: rotate(300deg);
+  transform-origin: bottom; }
 
 .ms-51 {
-  transform: rotate(306deg); }
+  transform: rotate(306deg);
+  transform-origin: bottom; }
 
 .ms-52 {
-  transform: rotate(312deg); }
+  transform: rotate(312deg);
+  transform-origin: bottom; }
 
 .ms-53 {
-  transform: rotate(318deg); }
+  transform: rotate(318deg);
+  transform-origin: bottom; }
 
 .ms-54 {
-  transform: rotate(324deg); }
+  transform: rotate(324deg);
+  transform-origin: bottom; }
 
 .ms-55 {
-  transform: rotate(330deg); }
+  transform: rotate(330deg);
+  transform-origin: bottom; }
 
 .ms-56 {
-  transform: rotate(336deg); }
+  transform: rotate(336deg);
+  transform-origin: bottom; }
 
 .ms-57 {
-  transform: rotate(342deg); }
+  transform: rotate(342deg);
+  transform-origin: bottom; }
 
 .ms-58 {
-  transform: rotate(348deg); }
+  transform: rotate(348deg);
+  transform-origin: bottom; }
 
 .ms-59 {
-  transform: rotate(354deg); }
+  transform: rotate(354deg);
+  transform-origin: bottom; }
 
-.sm-1 {
-  top: 94.31894px;
-  left: 418.74996px; }
+#digital div {
+  border: solid black 2px;
+  display: inline;
+  font-size: 50px; }
 
-.sm-2 {
-  top: 181.24998px;
-  left: 505.68102px; }
-
-.sm-3 {
-  top: 300px;
-  left: 537.5px; }
-
-.sm-4 {
-  top: 418.75002px;
-  left: 505.68102px; }
-
-.sm-5 {
-  top: 505.68106px;
-  left: 418.74996px; }
-
-.sm-6 {
-  top: 537.5px;
-  left: 299.99993px; }
-
-.sm-7 {
-  top: 505.68098px;
-  left: 181.24991px; }
-
-.sm-8 {
-  top: 418.74989px;
-  left: 94.3189px; }
-
-.sm-9 {
-  top: 299.99985px;
-  left: 62.5px; }
-
-.sm-10 {
-  top: 181.24985px;
-  left: 94.31905px; }
-
-.sm-11 {
-  top: 94.31887px;
-  left: 181.25018px; }
-
-.sm-12 {
-  top: 62.50003px;
-  left: 300.00036px; }
-
-.sm-13 {
-  top: 94.31939px;
-  left: 418.75154px; }
-
-.sm-14 {
-  top: 181.25292px;
-  left: 505.69183px; }
-
-.sm-15 {
-  top: 300.01995px;
-  left: 537.57154px; }
-
-.sm-16 {
-  top: 418.8728px;
-  left: 506.09222px; }
-
-.sm-17 {
-  top: 506.34708px;
-  left: 420.82368px; }
-
-.sm-18 {
-  top: 540.71489px;
-  left: 309.33596px; }
-
-.sm-19 {
-  top: 519.68092px;
-  left: 219.32557px; }
-
-.sm-20 {
-  top: 474.4289px;
-  left: 236.68336px; }
-
-.sm-21 {
-  top: 504.33172px;
-  left: 555.35694px; }
-
-.sm-22 {
-  top: 879.18811px;
-  left: 1687.26994px; }
-
-.sm-23 {
-  top: 2329.51131px;
-  left: 5021.75243px; }
-
-.sm-24 {
-  top: 6816.27061px;
-  left: 14211.86427px; }
-
-.sm-25 {
-  top: 19451.8496px;
-  left: 38431.23465px; }
-
-.sm-26 {
-  top: 53056.72058px;
-  left: 99692.85852px; }
-
-.sm-27 {
-  top: 138507.00254px;
-  left: 248661.71687px; }
-
-.sm-28 {
-  top: 347341.49533px;
-  left: 597619.35477px; }
-
-.sm-29 {
-  top: 839455.85844px;
-  left: 1386967.73749px; }
-
-.sm-30 {
-  top: 1960553.94464px;
-  left: 3115401.87819px; }
-
-.sm-31 {
-  top: 4435479.20933px;
-  left: 6787690.70018px; }
-
-.sm-32 {
-  top: 9741436.95084px;
-  left: 14374291.4852px; }
-
-.sm-33 {
-  top: 20810481.1574px;
-  left: 29643710.3617px; }
-
-.sm-34 {
-  top: 43320982.7203px;
-  left: 59636700.1242px; }
-
-.sm-35 {
-  top: 88020361.7578px;
-  left: 117223611.991px; }
-
-.sm-36 {
-  top: 174817830.377px;
-  left: 225455671.994px; }
-
-.sm-37 {
-  top: 339858992.985px;
-  left: 424835743.183px; }
-
-.sm-38 {
-  top: 647536946.895px;
-  left: 785263066.135px; }
-
-.sm-39 {
-  top: 1210543143.07px;
-  left: 1425346710.53px; }
-
-.sm-40 {
-  top: 2222812273.32px;
-  left: 2543169634.84px; }
-
-.sm-41 {
-  top: 4012849277.21px;
-  left: 4464606538.94px; }
-
-.sm-42 {
-  top: 7128838767.99px;
-  left: 7718209858.82px; }
-
-.sm-43 {
-  top: 12472679804.7px;
-  left: 13149825337.4px; }
-
-.sm-44 {
-  top: 21508424739.4px;
-  left: 22095945586.1px; }
-
-.sm-45 {
-  top: 36582573836.5px;
-  left: 36642973715.8px; }
-
-.sm-46 {
-  top: 61410703775.6px;
-  left: 60010862809.5px; }
-
-.sm-47 {
-  top: 101808893227px;
-  left: 97115085114.9px; }
-
-.sm-48 {
-  top: 166781895091px;
-  left: 155381950259px; }
-
-.sm-49 {
-  top: 270126360608px;
-  left: 245920719035px; }
-
-.sm-50 {
-  top: 432771074475px;
-  left: 385194036224px; }
-
-.sm-51 {
-  top: 686162897713px;
-  left: 597378847704px; }
-
-.sm-52 {
-  top: 1077124444377.0542px;
-  left: 917676866496px; }
-
-.sm-53 {
-  top: 1674767123378.344px;
-  left: 1396921461435.8025px; }
-
-.sm-54 {
-  top: 2580253475262.0156px;
-  left: 2107942389620.2512px; }
-
-.sm-55 {
-  top: 3940481559361.1108px;
-  left: 3154298346769.3521px; }
-
-.sm-56 {
-  top: 5967131581048.2324px;
-  left: 4682178883774.5342px; }
-
-.sm-57 {
-  top: 8962996331091.6738px;
-  left: 6896522966832.2666px; }
-
-.sm-58 {
-  top: 13358144156479.027px;
-  left: 10082715031002.744px; }
-
-.sm-59 {
-  top: 19759275857985.785px;
-  left: 14635617550499.129px; }
-
-.sm-60 {
-  top: 29016684585375.117px;
-  left: 21098202355184.312px; }
+#digital div:not(:last-child):after {
+  content: ":"; }
